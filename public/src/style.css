@@ -1,0 +1,76 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+    color: #fff;
+    background-color: #000000;
+    background-image: linear-gradient(127deg, #493f3f 0%, #66707a 74%);
+}
+.splash{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    z-index: 200;
+    color: #fff;
+    text-align: center;
+    line-height: 90vh;
+}
+.splash.display-none{
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    z-index: -10;
+    color: #fff;
+    text-align: center;
+    line-height: 90vh;
+    transition: all 0.5s;
+}
+@keyframes fadeIn{
+    to{
+        opacity: 1;
+    }
+}
+.fade-in{
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+}
+.input{
+    text-align: center;
+    margin-top: 64px;
+}
+h3{
+    text-align: center;
+}
+input[type = "text"]{
+    height: 30px;
+    width: 230px;
+    background: #a4afb9;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 18px;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+}
+input[type = "submit"]{
+    height: 26px;
+    width: 75px;
+    background: #a4afb9;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 15px;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+}
+div {
+    text-align: center;
+}

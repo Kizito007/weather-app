@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#493f3f">
+    <title>Smash It Weather App</title>
+    <link rel="stylesheet" type="text/css" href="src/style.css">
+    <link rel="manifest" href="mainfest.json">
+    <link rel="apple-touch-icon" href="icons/logo1.png">
+</head>
+<body>
+    <div class="splash">
+        <h2 class="fade-in">Smash It Weather App!</h2>
+    </div>
+
+    <div id="container">
+        <div class="input">
+            <input type="text" class="inputValue" placeholder="Enter City Name">
+            <input type="submit" value="Submit" class="button">
+        </div>
+        <h3>Current weather in <span id="current"></span></h3>
+        <div id="loc">
+            <p style="font-size: 25px; text-align: center;"><span id="location"></span>, <span id="country-code"> </span></p>
+        </div>
+        <div id="temp">
+             <p><i>Feels Like </i><span id="temp-value"></span><span id="temp-unit">&#176C</span></p>
+            <img src="" alt="" id="temp-icon">
+        </div>
+        <div id="climate">
+            <p><span id="time"> </span></p>
+        </div>
+        <!-- <div>
+            <p>Time: </p>
+        </div> -->
+        
+        <div>
+            <p>Sunrise: <span id="sunrise"></span></p>
+            <img src="icons/rise.svg">
+        </div>
+        <div>
+            <p>Sunset: <span id="sunset"></span></p>
+            <img src="icons/set.svg">
+        </div>
+        <div id="humid">
+            <p>Humidity: <span id="humidity"></span>%</p>
+        </div>
+        <div id="predz">
+            <p>Pressure: <span id="pressure"></span><span id="p-unit"> hPa</span></p>
+        </div>
+    </div>
+    
+    
+<!--
+    <div class="display">
+        <h1 class="name">a</h1>
+        <p class="descrp">b</p>
+        <p class="temp">c</p>
+    </div> 
+-->
+
+    <script src="src/script.js"></script>
+    <script src="src/index.js"></script>
+</body>
+</html>
